@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sys
 
 bank_pln = 0
@@ -43,14 +43,14 @@ def rejestracja():
             weryfikacja_logowanie()
         elif wejscie == "nie":
             sys.exit()
-=======
+
 
 def password():
    global haslo
    haslo = str(input("Podaj swoje haslo."))
    global haslo_potwierdzenie
    haslo_potwierdzenie = str(input("Podaj haslo raz jeszcze."))
->>>>>>> origin/aplikacja_bankowa
+
 
 def zapis_danych():
     f = open("data.txt",mode='w')
@@ -59,7 +59,7 @@ def zapis_danych():
     f.write(login)
     f.close()
 
-<<<<<<< HEAD
+
 def wplata_waluty_innej_niz_PLN():
     print("Jaka walute chcesz wplacic?")
     waluta = input("EUR/GBP/PLN/USD").lower
@@ -146,12 +146,6 @@ while zaczynamy == "logowanie":
         sys.exit()
 
 
-
-
-
-
-
-=======
 def check():
     while haslo_potwierdzenie != haslo:
         print("Hasla nie są zgodne")
@@ -172,4 +166,4 @@ if len(login) > 0:
     password()
     check()
     zapis_danych()
->>>>>>> origin/aplikacja_bankowa
+
