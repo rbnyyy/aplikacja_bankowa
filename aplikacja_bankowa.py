@@ -131,9 +131,11 @@ def weryfikacja_logowanie():
         print("Hasła nie są zgodne")
         weryfikacja_logowanie()
 
+imie = input("Podaj imie.")
 
 
-print("Zaczynamy?")
+print(f"Zaczynamy {imie}?")
+
 zaczynamy = input("Rejestracja czy Logowanie?").lower()
 if zaczynamy == "rejestracja":
     rejestracja()
